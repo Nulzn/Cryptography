@@ -30,8 +30,13 @@ class Cryptography:
                 decoded_arr = bytearray(decoded_arr)
                 with open(self.inputFile, "w") as fileInput:
                     fileInput.write(decoded_arr.decode())
+    
+    def __str__(self):
+        print("Cryptography Encoder/Decoder made by Nulzn")
 
 
 
-test = Cryptography(pathToInputFile="plain.txt", pathToOutputFile="encrypted.txt")
-test.Decrypt()
+changeMe = Cryptography(pathToInputFile="plain.txt", pathToOutputFile="encrypted.txt")
+
+# changeMe.Decrypt() Decrypts the message
+# changeMe.Encrypt() Encrypts the message
